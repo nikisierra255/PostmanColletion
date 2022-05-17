@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "2683f3c0-59cf-4d36-b839-a35984157eca",
+		"name": "Newman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Prueba1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Recibo cadena en el campo nombre\", function () {\r",
+							"    jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Recibo cadena de propiedades\", function () {\r",
+							"    jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.json.EDAD).to.be.a('number');\r",
+							"    pm.expect(jsonData.json.EDAD).to.not.be.a('string');\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.not.be.a('number');\r",
+							"    pm.expect(jsonData).to.have.to.property ('args');\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.include('KI');\r",
+							"    pm.expect(true).to.be.true;\r",
+							"    pm.expect({a: 3, b: 4}).to.include({a: 3, b: 4});\r",
+							"    pm.expect(jsonData.args).to.be.empty;\r",
+							"    pm.expect(jsonData.data).to.not.be.empty;\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"Codigo recibido es 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena\", function () {\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.have.lengthOf(4);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada\", function () {\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.have.lengthOf.above(3);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada\", function () {\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.have.lengthOf.below(5);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)\", function () {\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.have.lengthOf.within(4,20);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"Test con match)\", function () {\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.match(/KI/);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Test con match)\", function () {\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.match(/^NI/);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Test con not match)\", function () {\r",
+							"    pm.expect(jsonData.json.NOMBRE).to.not.match(/o/);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)\", function () {\r",
+							"    pm.expect(jsonData.json.EDAD).to.be.closeTo(20,5);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NOMBRE\": \"NIKI\",\r\n    \"APELLIDO\": \"SIERRA\",\r\n    \"EDAD\": 25\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postman-echo.com/post",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var MisTests = ()=> {\r",
+							"\r",
+							"    pm.test(\"Estado de la llamada esta Ready\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"El tiempo de respuesta de la llamada esta Readys/Estable\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(3000);\r",
+							"});\r",
+							"\r",
+							"}\r",
+							"\r",
+							"pm.environment.set(\"Conjunto de Test Comunes\", MisTests.toString());"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"eval(pm.environment.get(\"Conjunto de Test Comunes\"))();"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlecho}}/get",
+					"host": [
+						"{{urlecho}}"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlecho}}/get",
+					"host": [
+						"{{urlecho}}"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{urlecho}}/get",
+					"host": [
+						"{{urlecho}}"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba5",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const edad = Math.floor((Math.random()*100)+1);\r",
+							"//console.log(edad);\r",
+							"pm.globals.set(\"edadAleatoria\", edad);\r",
+							"\r",
+							"let password = Math.random().toString(36).substr(2,5);\r",
+							"//console.log(\"random\", r);\r",
+							"pm.globals.set(\"passwordAleatoria\", password)\r",
+							"\r",
+							"pm.sendRequest(\"https://postman-echo.com/ip\", function (err, response) {\r",
+							"    var jsonData = response.json();\r",
+							"    pm.globals.set(\"ip\", jsonData.ip);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validar un valor aleatorio de una campo\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.json.edad).to.eql(pm.variables.get(\"edadAleatoria\"));\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"nikito\",\r\n    \"apellido\":\"sierra\",\r\n    \"edad\":{{edadAleatoria}},\r\n    \"cantidad\":{{$randomInt}},\r\n    \"codigo\":\"{{$guid}}\",\r\n    \"password\":\"{{passwordAleatoria}}\",\r\n    \"ip\":\"{{ip}}\"\r\n    \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{urlecho}}/post",
+					"host": [
+						"{{urlecho}}"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

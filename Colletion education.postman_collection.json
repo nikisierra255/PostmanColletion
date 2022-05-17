@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "e8c4f117-5101-4639-96be-a8116559677e",
+		"name": "Colletion education",
+		"description": "Collettion education es una colección que construi a raíz de una curso que estuve realizando, todo lo que ven a continuación es práctica y seguimiento de las videoclases impartida por el master Fran",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Servicios practicas Get",
+			"item": [
+				{
+					"name": "primera get practica sin parametro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://postman-echo.com/get",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							]
+						},
+						"description": "Get de apis sin ningun parametro de retorno, ni de envio.\n\nel resultado debe de ser un archivo JSON vacio"
+					},
+					"response": []
+				},
+				{
+					"name": "primera get practica con parametro",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Usuario",
+								"value": "Nikito Sierra",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://postman-echo.com/get?niki=sierra&alex=sosa",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "niki",
+									"value": "sierra"
+								},
+								{
+									"key": "alex",
+									"value": "sosa"
+								}
+							]
+						},
+						"description": "Servicio de apis con parametros, enviado, el rsultado de devuelto debe de ser un archivo JSON con parametros predefinidos al enviarse"
+					},
+					"response": []
+				},
+				{
+					"name": "Get con ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://postman-echo.com/get?id=1",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Servicios get con ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Get con variable de entorno",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlecho}}\\get",
+							"host": [
+								"{{urlecho}}"
+							],
+							"path": [
+								"get"
+							]
+						},
+						"description": "Get con un enlace predefinido en una variable de entorno creada, llamada curso education, en ella definimos con {{urlecho}} la url https:\\\\\\\\postman-echo.com"
+					},
+					"response": []
+				},
+				{
+					"name": "Get con viable de entorno global",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlechoglobal}}\\get",
+							"host": [
+								"{{urlechoglobal}}"
+							],
+							"path": [
+								"get"
+							]
+						},
+						"description": "las variables de entorno funcionan aun sin un enviorement asignado en el workspances"
+					},
+					"response": []
+				},
+				{
+					"name": "prueba de herencia de padre/hijo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlecho}}\\get",
+							"host": [
+								"{{urlecho}}"
+							],
+							"path": [
+								"get"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Practica realizadas con los servicios, osea llamadas de Apis Get."
+		},
+		{
+			"name": "Servicios practicas Post",
+			"item": [
+				{
+					"name": "Post con RAW (TEXT)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "ESTO ES UNA PRUEBA DE POSTMAN",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://postman-echo.com/post",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"post"
+							]
+						},
+						"description": "Post con Raw, en la seccion de Text, se envia en este formato normal"
+					},
+					"response": []
+				},
+				{
+					"name": "Post con JSON",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NOMBRE\": \"NIKI\",\r\n    \"APELLIDO\": \"SIERRA\",\r\n    \"EDAD\": 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://postman-echo.com/post",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"post"
+							]
+						},
+						"description": "Se envia en formato JSON, y es reenviado al sistema de apis de postman de la misma manera\n\n{\n\n\"Nombre\": \"nikito\",\n\n\"apellido\": \"sierra\"\n\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Post con formulario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "niki",
+									"type": "text"
+								},
+								{
+									"key": "apellido",
+									"value": "sierra",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://postman-echo.com/post",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"post"
+							]
+						},
+						"description": "Tipo formualrio, el cual es una forma comun, y mas segura de enviar informacion sensible, la misma no se envia entre las cabeceras, ya que estas pueden ser tomada con facilidad"
+					},
+					"response": []
+				},
+				{
+					"name": "Post con array",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Pedido\": 20,\r\n    \"Cliente\": \"nikito sierra\",\r\n    \"Producto\":[\r\n        {\r\n            \"Id\": 1,\r\n            \"Cantidad\": 25\r\n        },\r\n        {\r\n            \"Id\": 255,\r\n            \"Cantidad\": 23\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://postman-echo.com/post",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"post"
+							]
+						},
+						"description": "Cadenas de servicios, dentro de un archivo JSON"
+					},
+					"response": []
+				}
+			],
+			"description": "Consultar datos de una base de datos"
+		},
+		{
+			"name": "Servicios practicas Put",
+			"item": [
+				{
+					"name": "Modificacion de base de dato con Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"descripcion\":\"televisor 55 pulgadas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://postman-echo.com/put",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"put"
+							]
+						},
+						"description": "Modificación de un articulo en una base de dato, ya creada, sea una lista de producto, personas, servicios entre otros."
+					},
+					"response": []
+				},
+				{
+					"name": "Prestamos de vehiculo Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Codigo cliente\": 10255,\r\n    \"Nombre del clinte\": \"Nikito sierra\",\r\n    \"Id producto\": 100501,\r\n    \"Nombre del producto\": \"Vehiculo Nissan Versa Note 2015\",\r\n    \"Precio del producto\": 530.580,\r\n    \"Tasa de financiamiento\": \"12 %\",\r\n    \"Tiempo de financiemaiento\": \"60 meses\"\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://postman-echo.com/put",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"put"
+							]
+						},
+						"description": "Actualizacion de una tabla completa de un producto, en este caso, el producto es un vehiculo, y se le esta actualizando, la tasa , el precio, el tiempo de financiamiento, entre otros"
+					},
+					"response": []
+				}
+			],
+			"description": "Agregar información en una base de datos dada ya creada."
+		},
+		{
+			"name": "Servicios practicas Delete",
+			"item": [
+				{
+					"name": "DELETE PRUEBA",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 5,\r\n    \"descripcion\":\"televisor 55 pulgadas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://postman-echo.com/delete",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"delete"
+							]
+						},
+						"description": "Borrar archivo de una base de datos, o servicio"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Variables dinamicas",
+			"item": [
+				{
+					"name": "Randomint",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlecho}}/get?paramt:1={{$randomInt}}",
+							"host": [
+								"{{urlecho}}"
+							],
+							"path": [
+								"get"
+							],
+							"query": [
+								{
+									"key": "paramt:1",
+									"value": "{{$randomInt}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultas random con Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"{{$guid}}\",\r\n    \"producto\":\"{{$randomProductName}}\",\r\n    \"precio\":\"{{$randomPrice}}\",\r\n    \"Nombre completo\":\"{{$randomFullName}}\",\r\n    \"direccion\":\"{{$randomStreetAddress}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{urlecho}}/post",
+							"host": [
+								"{{urlecho}}"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metodos de Autenticacion",
+			"item": [
+				{
+					"name": "Basic-Auth",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "password",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "postman",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://postman-echo.com/basic-auth",
+							"protocol": "https",
+							"host": [
+								"postman-echo",
+								"com"
+							],
+							"path": [
+								"basic-auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth con token bearer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1415a151625a1d8s1c8s1c82sc81dc1ds81v",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlhttpbin}}\\bearer",
+							"host": [
+								"{{urlhttpbin}}"
+							],
+							"path": [
+								"bearer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth1.0",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerSecret",
+									"value": "D+EdQ-gs$-%@2Nu7",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "RKCGzna7bv9YD57c",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlecho}}\\oauth1",
+							"host": [
+								"{{urlecho}}"
+							],
+							"path": [
+								"oauth1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth con Hawk",
+					"request": {
+						"auth": {
+							"type": "hawk",
+							"hawk": [
+								{
+									"key": "authKey",
+									"value": "werxhqb98rpaxn39848xrunpaw3489ruxnpa98w4rxn",
+									"type": "string"
+								},
+								{
+									"key": "authId",
+									"value": "dh37fgj492je",
+									"type": "string"
+								},
+								{
+									"key": "algorithm",
+									"value": "sha256",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{urlecho}}\\auth/hawk",
+							"host": [
+								"{{urlecho}}"
+							],
+							"path": [
+								"auth",
+								"hawk"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1710 @@
+{
+	"id": "44e3fe8d-01e5-448f-893b-6875a12df018",
+	"name": "Colletion education",
+	"timestamp": "2022-05-15T18:21:27.554Z",
+	"collection_id": "20450300-1573ba2d-8b09-4697-bc06-c521e5fccaba",
+	"folder_id": 0,
+	"environment_id": "20450300-80d21e43-b2e0-4c84-8106-4ce393ada46b",
+	"totalPass": 124,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "dbccd96e-ad79-41af-aeac-e2e58518d9de",
+			"name": "primera get practica sin parametro",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6257,
+				405,
+				118
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "292c5949-2f30-40bd-8a3f-bc0c757c16c8",
+			"name": "primera get practica con parametro",
+			"time": 148,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8671,
+				318,
+				148
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "25fb89e4-2f64-4de9-b2fb-93c087055a12",
+			"name": "Get con ID",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				615,
+				213,
+				129
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "826fd447-ced6-429d-8f12-b557b64f4acd",
+			"name": "Get con variable de entorno",
+			"time": 154,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2192,
+				140,
+				154
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "9b941d40-da39-4e50-864d-48d4a0d5923f",
+			"name": "Get con viable de entorno global",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				295,
+				130,
+				128
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "2b1f8a7d-0ffc-40b5-bb7f-d534423e1dd4",
+			"name": "prueba de herencia de padre/hijo",
+			"time": 104,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				272,
+				104,
+				104
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "5284488d-0a75-4712-821d-fd06b42616f2",
+			"name": "Post con RAW (TEXT)",
+			"time": 679,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				133,
+				116,
+				679
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "ea8317ee-e4e2-454d-9a52-429b059d32fd",
+			"name": "Post con JSON",
+			"time": 711,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Recibo cadena en el campo nombre": true,
+				"Recibo cadena de propiedades": true,
+				"Codigo recibido es 200": true,
+				"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+				"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+				"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+				"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+				"Test con match)": true,
+				"Test con not match)": true,
+				"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+			},
+			"testPassFailCounts": {
+				"Recibo cadena en el campo nombre": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Recibo cadena de propiedades": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Codigo recibido es 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Test con match)": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Test con not match)": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				115,
+				155,
+				711
+			],
+			"allTests": [
+				{
+					"Recibo cadena en el campo nombre": true,
+					"Recibo cadena de propiedades": true,
+					"Codigo recibido es 200": true,
+					"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+					"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+					"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+					"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+					"Test con match)": true,
+					"Test con not match)": true,
+					"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+				},
+				{
+					"Recibo cadena en el campo nombre": true,
+					"Recibo cadena de propiedades": true,
+					"Codigo recibido es 200": true,
+					"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+					"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+					"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+					"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+					"Test con match)": true,
+					"Test con not match)": true,
+					"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+				},
+				{
+					"Recibo cadena en el campo nombre": true,
+					"Recibo cadena de propiedades": true,
+					"Codigo recibido es 200": true,
+					"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+					"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+					"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+					"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+					"Test con match)": true,
+					"Test con not match)": true,
+					"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+				}
+			]
+		},
+		{
+			"id": "3d2a358d-8b6a-4b4d-b101-3b32b56e7c8e",
+			"name": "Post con formulario",
+			"time": 116,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				182,
+				104,
+				116
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "b04ae635-d70a-413e-af00-6e3c0809d039",
+			"name": "Post con array",
+			"time": 239,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				140,
+				129,
+				239
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "dbc8e256-dacf-4b2c-b7db-f41fd3752814",
+			"name": "Modificacion de base de dato con Put",
+			"time": 103,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				123,
+				180,
+				103
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "ed4221be-60f3-43d2-b437-5f3b1fb71ced",
+			"name": "Prestamos de vehiculo Put",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				203,
+				195,
+				138
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "ea904efc-de22-4a49-a127-ff36e3772de3",
+			"name": "DELETE PRUEBA",
+			"time": 104,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				290,
+				154,
+				104
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "04a2435a-7b91-4a60-aee1-34f03c73555e",
+			"name": "Randomint",
+			"time": 142,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195,
+				134,
+				142
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "1a43d511-74ac-436f-9151-687ee6a7626b",
+			"name": "consultas random con Post",
+			"time": 137,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				189,
+				125,
+				137
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "6c9625eb-1f4e-41bb-829e-9419697a941a",
+			"name": "Basic-Auth",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				150,
+				105,
+				129
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "7551bcf2-0fb5-4973-b367-3a793d68ded4",
+			"name": "Auth con token bearer",
+			"time": 116,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				723,
+				110,
+				116
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "6dec9f32-5518-4c0f-9c76-03bfd6e16b9e",
+			"name": "OAuth1.0",
+			"time": 1852,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				146,
+				137,
+				1852
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "78615a92-d8dc-4c97-935e-cb6bc8f32e4e",
+			"name": "Auth con Hawk",
+			"time": 134,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				238,
+				122,
+				134
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "1a454810-37f9-494f-828e-dbeaad7468a2",
+			"name": "Status",
+			"time": 130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				113,
+				96,
+				130
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "4e108b21-092b-4a73-8640-87184e9de47d",
+			"name": "Status Con parametro",
+			"time": 159,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				118,
+				129,
+				159
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "fce65c7b-b061-4a20-8003-ff7c615180c5",
+			"name": "Stream",
+			"time": 122,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				109,
+				190,
+				122
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "2d859cd0-7e3f-494f-8429-fe7501e03587",
+			"name": "Delay",
+			"time": 4108,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4135,
+				5246,
+				4108
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "c37008ec-7c22-4488-a456-766b227c602e",
+			"name": "UTF8",
+			"time": 165,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				160,
+				3646,
+				165
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "104b3611-2c4e-44fe-8f76-89b91a5a641d",
+			"name": "utilidad IP",
+			"time": 132,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				289,
+				113,
+				132
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "eff608d3-00da-4caa-92b6-984e693925cb",
+			"name": "Servicio (NOW) que devuelve fecha y hora",
+			"time": 253,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				150,
+				1537,
+				253
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "e0dc7914-b845-47ea-afe0-7c68b62f18c4",
+			"name": "Servicio (valid/timestamp) que devuelve True/false dependiendo la fecha",
+			"time": 297,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				130,
+				1808,
+				297
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "6aa52196-4a26-4e92-a488-7555ed7f4ef6",
+			"name": "Servicio (unit/timestamp) que devuelve 1 numero referente en el tiempo en el cual se este",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				134,
+				1142,
+				119
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "c10b4ca9-f155-4ef6-b2f9-f0ab09754407",
+			"name": "Servicio (SumarTiempo)",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				129,
+				2831,
+				221
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "dd3eaa14-06a6-4986-816e-18bc8070f889",
+			"name": "Servicio (RestarTiempo)",
+			"time": 131,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				151,
+				255,
+				131
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "4b8214a4-98f7-4f89-a030-b6eb2f13243c",
+			"name": "Servicio (Start) Presentar Cuando Inicio El año Presente",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				112,
+				1595,
+				120
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "163d9b99-f516-467f-8303-4631debd48f1",
+			"name": "servicio (Object) dividir en campos diferentes los resultados de fechas, hora y dias",
+			"time": 327,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				143,
+				204,
+				327
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "d2158f61-1f32-4d92-b350-fa40c2c982ca",
+			"name": "servicio (<--Before) Responder True/false si la fecha actual es anterior a la comparada",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				180,
+				2399,
+				138
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "fbeb317b-08f6-4951-9795-30aab406c77e",
+			"name": "servicio (After-->) Responder True/false si la fecha actual esta despues a la comparada",
+			"time": 135,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				433,
+				165,
+				135
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "32595c3a-cf07-490b-9283-19092daf37f4",
+			"name": "servicio (Between), este servicio busca la comparacion entre dos fechas",
+			"time": 164,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				135,
+				326,
+				164
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "bf5681ca-70b9-471f-944e-b712b4cb1bcf",
+			"name": "servicio (año bisiesto) con el mismo se pretende si un año X fue-es o sera bisiesto",
+			"time": 147,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				148,
+				140,
+				147
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "c4620ee7-a433-45ca-8985-80930efa79a1",
+			"name": "Transform",
+			"time": 758,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				182,
+				142,
+				758
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "dfb63aa6-13fc-4444-b1c3-74e28a02fc50",
+			"name": "Set Cookies (añadir cookies)",
+			"time": 599,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				555,
+				140,
+				599
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "b5cc99bf-4c8d-4ac7-94d5-b279b97047b0",
+			"name": "Get Cookies (llamar las cookies)",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				157,
+				111,
+				162
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "5dafde45-161f-4c6d-83f2-3dbad67d459a",
+			"name": "Delete Cookies (borrar cookies)",
+			"time": 115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				565,
+				106,
+				115
+			],
+			"allTests": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"id": "8bbae64a-2d98-4868-a51c-3e1ecfa8d573",
+			"name": "Mi primer test (comprobar el estado 200 de una URL)",
+			"time": 131,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Comprobar el estado 200 de una URL": true,
+				"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": true
+			},
+			"testPassFailCounts": {
+				"Comprobar el estado 200 de una URL": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				141,
+				110,
+				131
+			],
+			"allTests": [
+				{
+					"Comprobar el estado 200 de una URL": true,
+					"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": true
+				},
+				{
+					"Comprobar el estado 200 de una URL": true,
+					"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": true
+				},
+				{
+					"Comprobar el estado 200 de una URL": true,
+					"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": true
+				}
+			]
+		},
+		{
+			"id": "d501a80a-e6de-40e2-b8b8-e282e7235022",
+			"name": "Test  de Post con JSON",
+			"time": 140,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El resultado esperado Json0.0": true,
+				"El resultado esperado Json0.1": true,
+				"El resultado esperado Json0.2": true,
+				"El resultado esperado Json0.3": true,
+				"Comprobar que el servicio de apis este funcionando": true
+			},
+			"testPassFailCounts": {
+				"El resultado esperado Json0.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El resultado esperado Json0.1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El resultado esperado Json0.2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El resultado esperado Json0.3": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Comprobar que el servicio de apis este funcionando": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				122,
+				669,
+				140
+			],
+			"allTests": [
+				{
+					"El resultado esperado Json0.0": true,
+					"El resultado esperado Json0.1": true,
+					"El resultado esperado Json0.2": true,
+					"El resultado esperado Json0.3": true,
+					"Comprobar que el servicio de apis este funcionando": true
+				},
+				{
+					"El resultado esperado Json0.0": true,
+					"El resultado esperado Json0.1": true,
+					"El resultado esperado Json0.2": true,
+					"El resultado esperado Json0.3": true,
+					"Comprobar que el servicio de apis este funcionando": true
+				},
+				{
+					"El resultado esperado Json0.0": true,
+					"El resultado esperado Json0.1": true,
+					"El resultado esperado Json0.2": true,
+					"El resultado esperado Json0.3": true,
+					"Comprobar que el servicio de apis este funcionando": true
+				}
+			]
+		},
+		{
+			"id": "81e87e3d-44ef-4c50-b04b-4e9b9a3635f4",
+			"name": "Delay con test de tiempo de respuesta de apis",
+			"time": 2137,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"dar una Respuesta en un tiempo menor de 3000ms": true
+			},
+			"testPassFailCounts": {
+				"dar una Respuesta en un tiempo menor de 3000ms": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				2202,
+				2321,
+				2137
+			],
+			"allTests": [
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true
+				},
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true
+				},
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true
+				}
+			]
+		},
+		{
+			"id": "97d0834a-76e7-4e3d-9f61-748abb76e920",
+			"name": "Delay con test de tiempo y respuesta del cuerpo exacto de lo que sale en el test",
+			"time": 2534,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"dar una Respuesta en un tiempo menor de 3000ms": true,
+				"El cuerpo de la respuesta es:": true,
+				"Content-Type is present": true,
+				"Connection": true,
+				"Tiene cadena OK": true
+			},
+			"testPassFailCounts": {
+				"dar una Respuesta en un tiempo menor de 3000ms": {
+					"pass": 3,
+					"fail": 0
+				},
+				"El cuerpo de la respuesta es:": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Connection": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Tiene cadena OK": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				2308,
+				2156,
+				2534
+			],
+			"allTests": [
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true,
+					"El cuerpo de la respuesta es:": true,
+					"Content-Type is present": true,
+					"Connection": true,
+					"Tiene cadena OK": true
+				},
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true,
+					"El cuerpo de la respuesta es:": true,
+					"Content-Type is present": true,
+					"Connection": true,
+					"Tiene cadena OK": true
+				},
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true,
+					"El cuerpo de la respuesta es:": true,
+					"Content-Type is present": true,
+					"Connection": true,
+					"Tiene cadena OK": true
+				}
+			]
+		},
+		{
+			"id": "3d29bb85-3bbc-41c8-9fc6-be1dbb9fae64",
+			"name": "Status TEST  verificar la presencia de una cadena exacta en los resultados de codigo",
+			"time": 154,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {
+				"Method Not Allowed": true,
+				"El codigo aparece en el listado de code:": true
+			},
+			"testPassFailCounts": {
+				"Method Not Allowed": {
+					"pass": 3,
+					"fail": 0
+				},
+				"El codigo aparece en el listado de code:": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				119,
+				158,
+				154
+			],
+			"allTests": [
+				{
+					"Method Not Allowed": true,
+					"El codigo aparece en el listado de code:": true
+				},
+				{
+					"Method Not Allowed": true,
+					"El codigo aparece en el listado de code:": true
+				},
+				{
+					"Method Not Allowed": true,
+					"El codigo aparece en el listado de code:": true
+				}
+			]
+		},
+		{
+			"id": "14bf2c60-f983-45de-93ca-fbfce26f1850",
+			"name": "Post con JSON Test con ChairAssertions, Above, Below, closeTo entre otros",
+			"time": 177,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Recibo cadena en el campo nombre": true,
+				"Recibo cadena de propiedades": true,
+				"Codigo recibido es 200": true,
+				"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+				"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+				"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+				"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+				"Test con match)": true,
+				"Test con not match)": true,
+				"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+			},
+			"testPassFailCounts": {
+				"Recibo cadena en el campo nombre": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Recibo cadena de propiedades": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Codigo recibido es 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Test con match)": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Test con not match)": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				152,
+				121,
+				177
+			],
+			"allTests": [
+				{
+					"Recibo cadena en el campo nombre": true,
+					"Recibo cadena de propiedades": true,
+					"Codigo recibido es 200": true,
+					"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+					"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+					"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+					"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+					"Test con match)": true,
+					"Test con not match)": true,
+					"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+				},
+				{
+					"Recibo cadena en el campo nombre": true,
+					"Recibo cadena de propiedades": true,
+					"Codigo recibido es 200": true,
+					"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+					"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+					"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+					"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+					"Test con match)": true,
+					"Test con not match)": true,
+					"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+				},
+				{
+					"Recibo cadena en el campo nombre": true,
+					"Recibo cadena de propiedades": true,
+					"Codigo recibido es 200": true,
+					"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+					"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+					"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+					"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+					"Test con match)": true,
+					"Test con not match)": true,
+					"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+				}
+			]
+		},
+		{
+			"id": "35ed17f0-84be-4a2e-bfa0-8a8e09068d99",
+			"name": "Testing xml",
+			"time": 821,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar una cadena en un determinado campo de una archivo XML": true
+			},
+			"testPassFailCounts": {
+				"Verificar una cadena en un determinado campo de una archivo XML": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				537,
+				298,
+				821
+			],
+			"allTests": [
+				{
+					"Verificar una cadena en un determinado campo de una archivo XML": true
+				},
+				{
+					"Verificar una cadena en un determinado campo de una archivo XML": true
+				},
+				{
+					"Verificar una cadena en un determinado campo de una archivo XML": true
+				}
+			]
+		},
+		{
+			"id": "ec0f7f84-c98b-4b60-9662-9d4a597e687e",
+			"name": "Testing TXT",
+			"time": 93,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				141,
+				93
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				},
+				{
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "76fdb035-9208-49e6-bcdb-7283c6d00289",
+			"name": "Creando variables en medio de testing",
+			"time": 115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				122,
+				115
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		},
+		{
+			"id": "91449213-bd07-493b-a812-e9a1b34f3e6f",
+			"name": "MisTests conjuntos",
+			"time": 138,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Estado de la llamada esta Ready": true,
+				"El tiempo de respuesta de la llamada esta Readys/Estable": true
+			},
+			"testPassFailCounts": {
+				"Estado de la llamada esta Ready": {
+					"pass": 2,
+					"fail": 0
+				},
+				"El tiempo de respuesta de la llamada esta Readys/Estable": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				118,
+				138
+			],
+			"allTests": [
+				{
+					"Estado de la llamada esta Ready": true,
+					"El tiempo de respuesta de la llamada esta Readys/Estable": true
+				},
+				{
+					"Estado de la llamada esta Ready": true,
+					"El tiempo de respuesta de la llamada esta Readys/Estable": true
+				}
+			]
+		},
+		{
+			"id": "46663105-4378-4732-9989-aa02fc1ccd40",
+			"name": "PreRequest con test, body, header  y parametros",
+			"time": 1360,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar un valor aleatorio de una campo": true
+			},
+			"testPassFailCounts": {
+				"Validar un valor aleatorio de una campo": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				108,
+				1360
+			],
+			"allTests": [
+				{
+					"Validar un valor aleatorio de una campo": true
+				},
+				{
+					"Validar un valor aleatorio de una campo": true
+				}
+			]
+		},
+		{
+			"id": "5aa41ec5-0ce5-490b-96f1-b04c678ea363",
+			"name": "Enviar peticiones dentro de PreRequets Scritps",
+			"time": 109,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Validar un valor aleatorio de una campo": true
+			},
+			"testPassFailCounts": {
+				"Validar un valor aleatorio de una campo": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				117,
+				109
+			],
+			"allTests": [
+				{
+					"Validar un valor aleatorio de una campo": true
+				},
+				{
+					"Validar un valor aleatorio de una campo": true
+				}
+			]
+		},
+		{
+			"id": "41121e09-2b29-4a60-9332-bd380c0148e0",
+			"name": "Get  IP",
+			"time": 110,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				586,
+				110
+			],
+			"allTests": [
+				{},
+				{}
+			]
+		}
+	],
+	"count": 4,
+	"totalTime": 89262,
+	"collection": {
+		"requests": [
+			{
+				"id": "dbccd96e-ad79-41af-aeac-e2e58518d9de",
+				"method": "GET"
+			},
+			{
+				"id": "292c5949-2f30-40bd-8a3f-bc0c757c16c8",
+				"method": "GET"
+			},
+			{
+				"id": "25fb89e4-2f64-4de9-b2fb-93c087055a12",
+				"method": "GET"
+			},
+			{
+				"id": "826fd447-ced6-429d-8f12-b557b64f4acd",
+				"method": "GET"
+			},
+			{
+				"id": "9b941d40-da39-4e50-864d-48d4a0d5923f",
+				"method": "GET"
+			},
+			{
+				"id": "2b1f8a7d-0ffc-40b5-bb7f-d534423e1dd4",
+				"method": "GET"
+			},
+			{
+				"id": "5284488d-0a75-4712-821d-fd06b42616f2",
+				"method": "POST"
+			},
+			{
+				"id": "ea8317ee-e4e2-454d-9a52-429b059d32fd",
+				"method": "POST"
+			},
+			{
+				"id": "3d2a358d-8b6a-4b4d-b101-3b32b56e7c8e",
+				"method": "POST"
+			},
+			{
+				"id": "b04ae635-d70a-413e-af00-6e3c0809d039",
+				"method": "POST"
+			},
+			{
+				"id": "dbc8e256-dacf-4b2c-b7db-f41fd3752814",
+				"method": "PUT"
+			},
+			{
+				"id": "ed4221be-60f3-43d2-b437-5f3b1fb71ced",
+				"method": "PUT"
+			},
+			{
+				"id": "ea904efc-de22-4a49-a127-ff36e3772de3",
+				"method": "DELETE"
+			},
+			{
+				"id": "04a2435a-7b91-4a60-aee1-34f03c73555e",
+				"method": "GET"
+			},
+			{
+				"id": "1a43d511-74ac-436f-9151-687ee6a7626b",
+				"method": "POST"
+			},
+			{
+				"id": "6c9625eb-1f4e-41bb-829e-9419697a941a",
+				"method": "GET"
+			},
+			{
+				"id": "7551bcf2-0fb5-4973-b367-3a793d68ded4",
+				"method": "GET"
+			},
+			{
+				"id": "6dec9f32-5518-4c0f-9c76-03bfd6e16b9e",
+				"method": "GET"
+			},
+			{
+				"id": "78615a92-d8dc-4c97-935e-cb6bc8f32e4e",
+				"method": "GET"
+			},
+			{
+				"id": "1a454810-37f9-494f-828e-dbeaad7468a2",
+				"method": "GET"
+			},
+			{
+				"id": "4e108b21-092b-4a73-8640-87184e9de47d",
+				"method": "GET"
+			},
+			{
+				"id": "fce65c7b-b061-4a20-8003-ff7c615180c5",
+				"method": "GET"
+			},
+			{
+				"id": "2d859cd0-7e3f-494f-8429-fe7501e03587",
+				"method": "GET"
+			},
+			{
+				"id": "c37008ec-7c22-4488-a456-766b227c602e",
+				"method": "GET"
+			},
+			{
+				"id": "104b3611-2c4e-44fe-8f76-89b91a5a641d",
+				"method": "GET"
+			},
+			{
+				"id": "eff608d3-00da-4caa-92b6-984e693925cb",
+				"method": "GET"
+			},
+			{
+				"id": "e0dc7914-b845-47ea-afe0-7c68b62f18c4",
+				"method": "GET"
+			},
+			{
+				"id": "6aa52196-4a26-4e92-a488-7555ed7f4ef6",
+				"method": "GET"
+			},
+			{
+				"id": "c10b4ca9-f155-4ef6-b2f9-f0ab09754407",
+				"method": "GET"
+			},
+			{
+				"id": "dd3eaa14-06a6-4986-816e-18bc8070f889",
+				"method": "GET"
+			},
+			{
+				"id": "4b8214a4-98f7-4f89-a030-b6eb2f13243c",
+				"method": "GET"
+			},
+			{
+				"id": "163d9b99-f516-467f-8303-4631debd48f1",
+				"method": "GET"
+			},
+			{
+				"id": "d2158f61-1f32-4d92-b350-fa40c2c982ca",
+				"method": "GET"
+			},
+			{
+				"id": "fbeb317b-08f6-4951-9795-30aab406c77e",
+				"method": "GET"
+			},
+			{
+				"id": "32595c3a-cf07-490b-9283-19092daf37f4",
+				"method": "GET"
+			},
+			{
+				"id": "bf5681ca-70b9-471f-944e-b712b4cb1bcf",
+				"method": "GET"
+			},
+			{
+				"id": "c4620ee7-a433-45ca-8985-80930efa79a1",
+				"method": "GET"
+			},
+			{
+				"id": "dfb63aa6-13fc-4444-b1c3-74e28a02fc50",
+				"method": "GET"
+			},
+			{
+				"id": "b5cc99bf-4c8d-4ac7-94d5-b279b97047b0",
+				"method": "GET"
+			},
+			{
+				"id": "5dafde45-161f-4c6d-83f2-3dbad67d459a",
+				"method": "GET"
+			},
+			{
+				"id": "8bbae64a-2d98-4868-a51c-3e1ecfa8d573",
+				"method": "GET"
+			},
+			{
+				"id": "d501a80a-e6de-40e2-b8b8-e282e7235022",
+				"method": "POST"
+			},
+			{
+				"id": "81e87e3d-44ef-4c50-b04b-4e9b9a3635f4",
+				"method": "GET"
+			},
+			{
+				"id": "97d0834a-76e7-4e3d-9f61-748abb76e920",
+				"method": "GET"
+			},
+			{
+				"id": "3d29bb85-3bbc-41c8-9fc6-be1dbb9fae64",
+				"method": "GET"
+			},
+			{
+				"id": "14bf2c60-f983-45de-93ca-fbfce26f1850",
+				"method": "POST"
+			},
+			{
+				"id": "35ed17f0-84be-4a2e-bfa0-8a8e09068d99",
+				"method": "GET"
+			},
+			{
+				"id": "ec0f7f84-c98b-4b60-9662-9d4a597e687e",
+				"method": "GET"
+			},
+			{
+				"id": "76fdb035-9208-49e6-bcdb-7283c6d00289",
+				"method": "POST"
+			},
+			{
+				"id": "91449213-bd07-493b-a812-e9a1b34f3e6f",
+				"method": "GET"
+			},
+			{
+				"id": "46663105-4378-4732-9989-aa02fc1ccd40",
+				"method": "POST"
+			},
+			{
+				"id": "5aa41ec5-0ce5-490b-96f1-b04c678ea363",
+				"method": "POST"
+			},
+			{
+				"id": "41121e09-2b29-4a60-9332-bd380c0148e0",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Newman" tests="5" time="1.460">
+  <testsuite name="Prueba1" id="792f0530-9142-47d6-a074-2afb53ec2c29" timestamp="2022-05-16T21:09:17.216Z" tests="11" failures="0" errors="0" time="0.839">
+    <testcase name="Recibo cadena en el campo nombre" time="0.839" classname="Newman"/>
+    <testcase name="Recibo cadena de propiedades" time="0.839" classname="Newman"/>
+    <testcase name="Codigo recibido es 200" time="0.839" classname="Newman"/>
+    <testcase name="Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena" time="0.839" classname="Newman"/>
+    <testcase name="Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada" time="0.839" classname="Newman"/>
+    <testcase name="Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada" time="0.839" classname="Newman"/>
+    <testcase name="Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)" time="0.839" classname="Newman"/>
+    <testcase name="Test con match)" time="0.839" classname="Newman"/>
+    <testcase name="Test con not match)" time="0.839" classname="Newman"/>
+    <testcase name="Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)" time="0.839" classname="Newman"/>
+  </testsuite>
+  <testsuite name="Prueba2" id="85912c1f-9368-46e8-acc2-a407118095f2" timestamp="2022-05-16T21:09:17.216Z" tests="2" failures="0" errors="0" time="0.127">
+    <testcase name="Estado de la llamada esta Ready" time="0.127" classname="Newman"/>
+    <testcase name="El tiempo de respuesta de la llamada esta Readys/Estable" time="0.127" classname="Newman"/>
+  </testsuite>
+  <testsuite name="Prueba3" id="645f730c-c2af-4316-8b59-da76e713f133" timestamp="2022-05-16T21:09:17.216Z" tests="0" failures="0" errors="0" time="0.117"/>
+  <testsuite name="Prueba4" id="8ad842a1-0fad-4218-8821-04a73bad3ece" timestamp="2022-05-16T21:09:17.216Z" tests="0" failures="0" errors="0" time="0.133"/>
+  <testsuite name="Prueba5" id="9550ddfc-9215-4663-a262-1f5fe2af5324" timestamp="2022-05-16T21:09:17.216Z" tests="1" failures="0" errors="0" time="0.122">
+    <testcase name="Validar un valor aleatorio de una campo" time="0.122" classname="Newman"/>
+  </testsuite>
+</testsuites>

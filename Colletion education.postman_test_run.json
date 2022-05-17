@@ -1,0 +1,402 @@
+{
+	"id": "0132ad13-0d48-424a-93bb-cf57054f5469",
+	"name": "Colletion education",
+	"timestamp": "2022-05-15T17:55:49.236Z",
+	"collection_id": "20450300-1573ba2d-8b09-4697-bc06-c521e5fccaba",
+	"folder_id": "20450300-5181493e-8bd8-4938-bf27-29d5ad55f438",
+	"environment_id": "20450300-80d21e43-b2e0-4c84-8106-4ce393ada46b",
+	"totalPass": 26,
+	"totalFail": 2,
+	"results": [
+		{
+			"id": "8bbae64a-2d98-4868-a51c-3e1ecfa8d573",
+			"name": "Mi primer test (comprobar el estado 200 de una URL)",
+			"url": "https://postman-echo.com/get",
+			"time": 757,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Comprobar el estado 200 de una URL": true,
+				"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": true
+			},
+			"testPassFailCounts": {
+				"Comprobar el estado 200 de una URL": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				757
+			],
+			"allTests": [
+				{
+					"Comprobar el estado 200 de una URL": true,
+					"Confirmar que las palabras salgan dentro de la respuesta de la llamada Get": true
+				}
+			]
+		},
+		{
+			"id": "d501a80a-e6de-40e2-b8b8-e282e7235022",
+			"name": "Test  de Post con JSON",
+			"url": "https://postman-echo.com/post",
+			"time": 149,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"El resultado esperado Json0.0": true,
+				"El resultado esperado Json0.1": true,
+				"El resultado esperado Json0.2": true,
+				"El resultado esperado Json0.3": false,
+				"Comprobar que el servicio de apis este funcionando": true
+			},
+			"testPassFailCounts": {
+				"El resultado esperado Json0.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El resultado esperado Json0.1": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El resultado esperado Json0.2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El resultado esperado Json0.3": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Comprobar que el servicio de apis este funcionando": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				149
+			],
+			"allTests": [
+				{
+					"El resultado esperado Json0.0": true,
+					"El resultado esperado Json0.1": true,
+					"El resultado esperado Json0.2": true,
+					"El resultado esperado Json0.3": false,
+					"Comprobar que el servicio de apis este funcionando": true
+				}
+			]
+		},
+		{
+			"id": "81e87e3d-44ef-4c50-b04b-4e9b9a3635f4",
+			"name": "Delay con test de tiempo de respuesta de apis",
+			"url": "https://postman-echo.com/delay/2",
+			"time": 2161,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"dar una Respuesta en un tiempo menor de 3000ms": true
+			},
+			"testPassFailCounts": {
+				"dar una Respuesta en un tiempo menor de 3000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2161
+			],
+			"allTests": [
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true
+				}
+			]
+		},
+		{
+			"id": "97d0834a-76e7-4e3d-9f61-748abb76e920",
+			"name": "Delay con test de tiempo y respuesta del cuerpo exacto de lo que sale en el test",
+			"url": "https://postman-echo.com/delay/2",
+			"time": 2156,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"dar una Respuesta en un tiempo menor de 3000ms": true,
+				"El cuerpo de la respuesta es:": true,
+				"Content-Type is present": true,
+				"Connection": true,
+				"Tiene cadena OK": true
+			},
+			"testPassFailCounts": {
+				"dar una Respuesta en un tiempo menor de 3000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"El cuerpo de la respuesta es:": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Connection": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tiene cadena OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2156
+			],
+			"allTests": [
+				{
+					"dar una Respuesta en un tiempo menor de 3000ms": true,
+					"El cuerpo de la respuesta es:": true,
+					"Content-Type is present": true,
+					"Connection": true,
+					"Tiene cadena OK": true
+				}
+			]
+		},
+		{
+			"id": "3d29bb85-3bbc-41c8-9fc6-be1dbb9fae64",
+			"name": "Status TEST  verificar la presencia de una cadena exacta en los resultados de codigo",
+			"url": "https://postman-echo.com/status/201",
+			"time": 141,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Method Not Allowed": false,
+				"El codigo aparece en el listado de code:": true
+			},
+			"testPassFailCounts": {
+				"Method Not Allowed": {
+					"pass": 0,
+					"fail": 1
+				},
+				"El codigo aparece en el listado de code:": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Method Not Allowed": false,
+					"El codigo aparece en el listado de code:": true
+				}
+			]
+		},
+		{
+			"id": "14bf2c60-f983-45de-93ca-fbfce26f1850",
+			"name": "Post con JSON Test con ChairAssertions, Above, Below, closeTo entre otros",
+			"url": "https://postman-echo.com/post",
+			"time": 143,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Recibo cadena en el campo nombre": true,
+				"Recibo cadena de propiedades": true,
+				"Codigo recibido es 200": true,
+				"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+				"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+				"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+				"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+				"Test con match)": true,
+				"Test con not match)": true,
+				"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+			},
+			"testPassFailCounts": {
+				"Recibo cadena en el campo nombre": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Recibo cadena de propiedades": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Codigo recibido es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test con match)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test con not match)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				143
+			],
+			"allTests": [
+				{
+					"Recibo cadena en el campo nombre": true,
+					"Recibo cadena de propiedades": true,
+					"Codigo recibido es 200": true,
+					"Mas Test Experto con to.have lo cual debe de tener la cantidad indicada de cadena": true,
+					"Mas Test Experto con above, la cantidad de cadena debe de tener menos letra de la cantidad indicada": true,
+					"Mas Test Experto con below, el test debe de tener mas cadena de la cantidad que tiene la cadena predeterminada": true,
+					"Test con within, para setencial de que en un campo solo se pueda escribir, cadenas, mayor de (3) y menores de (20)": true,
+					"Test con match)": true,
+					"Test con not match)": true,
+					"Test con closeTo, el cual te acepta una campo x mas un margen de manejo por encima de x y por debajo de x)": true
+				}
+			]
+		},
+		{
+			"id": "35ed17f0-84be-4a2e-bfa0-8a8e09068d99",
+			"name": "Testing xml",
+			"url": "http://httpbin.org/xml",
+			"time": 1187,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verificar una cadena en un determinado campo de una archivo XML": true
+			},
+			"testPassFailCounts": {
+				"Verificar una cadena en un determinado campo de una archivo XML": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1187
+			],
+			"allTests": [
+				{
+					"Verificar una cadena en un determinado campo de una archivo XML": true
+				}
+			]
+		},
+		{
+			"id": "ec0f7f84-c98b-4b60-9662-9d4a597e687e",
+			"name": "Testing TXT",
+			"url": "http://httpbin.org/robots.txt",
+			"time": 260,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				260
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "76fdb035-9208-49e6-bcdb-7283c6d00289",
+			"name": "Creando variables en medio de testing",
+			"url": "https://postman-echo.com/post",
+			"time": 830,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				830
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 7784,
+	"collection": {
+		"requests": [
+			{
+				"id": "8bbae64a-2d98-4868-a51c-3e1ecfa8d573",
+				"method": "GET"
+			},
+			{
+				"id": "d501a80a-e6de-40e2-b8b8-e282e7235022",
+				"method": "POST"
+			},
+			{
+				"id": "81e87e3d-44ef-4c50-b04b-4e9b9a3635f4",
+				"method": "GET"
+			},
+			{
+				"id": "97d0834a-76e7-4e3d-9f61-748abb76e920",
+				"method": "GET"
+			},
+			{
+				"id": "3d29bb85-3bbc-41c8-9fc6-be1dbb9fae64",
+				"method": "GET"
+			},
+			{
+				"id": "14bf2c60-f983-45de-93ca-fbfce26f1850",
+				"method": "POST"
+			},
+			{
+				"id": "35ed17f0-84be-4a2e-bfa0-8a8e09068d99",
+				"method": "GET"
+			},
+			{
+				"id": "ec0f7f84-c98b-4b60-9662-9d4a597e687e",
+				"method": "GET"
+			},
+			{
+				"id": "76fdb035-9208-49e6-bcdb-7283c6d00289",
+				"method": "POST"
+			}
+		]
+	}
+}
